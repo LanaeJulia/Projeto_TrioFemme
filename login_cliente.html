@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login do Cliente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .login-form {
+      display: inline-block;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-field {
+      margin-bottom: 10px;
+    }
+
+    .form-field label {
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    .form-field input[type="text"],
+    .form-field input[type="password"] {
+      padding: 5px;
+      font-size: 16px;
+      width: 200px;
+    }
+
+    .form-actions {
+      margin-top: 20px;
+    }
+
+    .form-actions button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+
+    .register-link {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login do Cliente</h1>
+
+  <form class="login-form" action="verificar_login_cliente.php" method="POST">
+    <div class="form-field">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+  
+    <div class="form-field">
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+  
+    <div class="form-actions">
+      <button type="submit">Login</button>
+    </div>
+  </form>
+
+  <div class="register-link">
+    Ainda não possui um cadastro? <a href="pagina_cadastro_cliente.html">Clique aqui</a> para se cadastrar.
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro de Cliente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .cadastro-form {
+      display: inline-block;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-field {
+      margin-bottom: 10px;
+    }
+
+    .form-field label {
+      display: inline-block;
+      width: 150px;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    .form-field input[type="text"],
+    .form-field input[type="number"] {
+      padding: 5px;
+      font-size: 16px;
+      width: 200px;
+    }
+
+    .form-actions {
+      margin-top: 20px;
+    }
+
+    .form-actions button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cadastro de Cliente</h1>
+
+  <form class="cadastro-form" action="processar_cadastro_cliente.php" method="POST">
+    <div class="form-field">
+      <label for="cd_cliente">Código do Cliente:</label>
+      <input type="number" id="cd_cliente" name="cd_cliente" required>
+    </div>
+  
+    <div class="form-field">
+      <label for="nm_cliente">Nome do Cliente:</label>
+      <input type="text" id="nm_cliente" name="nm_cliente" required>
+    </div>
+  
+    <div class="form-field">
+      <label for="cont_cliente">Contato do Cliente:</label>
+      <input type="number" id="cont_cliente" name="cont_cliente" required>
+    </div>
+  
+    <div class="form-field">
+      <label for="end_cliente">Endereço do Cliente:</label>
+      <input type="text" id="end_cliente" name="end_cliente" required>
+    </div>
+  
+    <div class="form-actions">
+      <button type="submit">Cadastrar</button>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login do Gerente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .login-form {
+      display: inline-block;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-field {
+      margin-bottom: 10px;
+    }
+
+    .form-field label {
+      display: inline-block;
+      width: 150px;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    .form-field input[type="text"],
+    .form-field input[type="password"] {
+      padding: 5px;
+      font-size: 16px;
+      width: 200px;
+    }
+
+    .form-actions {
+      margin-top: 20px;
+    }
+
+    .form-actions button {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login do Atendente</h1>
+
+  <form class="login-form" action="verificar_login_gerente.php" method="POST">
+    <div class="form-field">
+      <label for="codigo">Código:</label>
+      <input type="text" id="codigo" name="codigo" required>
+    </div>
+  
+    <div class="form-field">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome" required>
+    </div>
+  
+    <div class="form-field">
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+    </div>
+  
+    <div class="form-actions">
+        <a href="atendente.html">Login</a>
+      <!-- <button href= "atendente.html" type="submit">Login</button> -->
+    </div>
+  </form>
+</body>
+</html>
